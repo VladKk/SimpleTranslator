@@ -24,9 +24,11 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    bool checkComboBox();
+    const QString API_KEY = ""; // here you have to insert yours API key in the quotes
 
-    static QString translation(const QString &keyword, const QString &from, const QString &to);
+    QString translation(const QString &keyword, const QString &from, const QString &to);
+
+    static QString parseText(QString text);
 };
 
 #endif //MAINWINDOW_H
