@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.5)
 
 project(SimpleTranslator LANGUAGES CXX)
 
@@ -11,7 +11,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_PREFIX_PATH "/home/vlad/Qt/5.14.1/gcc_64/lib/cmake")
+# prefix path for default qt folder (you can change it on yours)
+set(CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/Qt/5.14.1/gcc_64/lib/cmake")
 
 find_package(Qt5 COMPONENTS Widgets Network REQUIRED)
 
