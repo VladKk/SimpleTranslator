@@ -33,7 +33,7 @@ void MainWindow::actions() {
                                  "Tried to use everything I know\n"
                                  "May have a lot of bugs and mistakes\n"
                                  "Used technologies:\n"
-                                 "C++, Qt, CMake");
+                                 "C++, Qt, CMake, Google Translation API");
     } else if (action == ui->actionAbout_developer) {
         QMessageBox::information(this, "SimpleTranslator",
                                  "Find me in the Web!\n"
